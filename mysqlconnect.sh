@@ -16,4 +16,4 @@ while read -r line; do
   fi
 done < <(egrep -v "(^#|^\s|^$)" .env)
 
-docker-compose exec mariadb mysql -uroot -p${MYSQL_ROOT_PASSWORD} -Ddefault
+docker-compose exec mariadb mysql -uroot -p${MYSQL_ROOT_PASSWORD} -D${MARIADB_DATABASE}

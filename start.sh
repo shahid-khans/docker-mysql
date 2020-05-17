@@ -11,7 +11,6 @@ fi
 
 while read -r line; do
   VARNAME=$(echo ${line} | awk '{sub(/\=.*/,x)}1')
-  echo $VARNAME
 
   if [[ -z ${!VARNAME} ]]; then
     declare -x "${line}"
