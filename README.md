@@ -29,7 +29,7 @@
 
 Just open in a terminal:
 
-```shell
+```docker
 git clone https://github.com/shahid-khans/docker-mysql.git
 cd docker-mysql
 cp env-example .env
@@ -39,8 +39,8 @@ cp env-example .env
 Open database editor tool my favorite ♥️️  is  [heidisql only for windows](https://www.heidisql.com/)
 
 You can check the logs using `./logs.sh` command to see what's going on during the project startup.
-
-you can stop the  mysql docker container using `./stop.sh`
+you can stop the  mysql docker container using `./stop.sh`.
+connect to mysql database `./mysqlconnect.sh`
 default port for mysql is `3306` and credentials you can see in `.env` file.
 
 
