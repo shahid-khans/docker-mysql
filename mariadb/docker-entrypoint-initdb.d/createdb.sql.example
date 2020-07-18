@@ -4,7 +4,7 @@
 #
 # example: .env MYSQL_USER=appuser and need db name is myshop_db
 #
-#    CREATE DATABASE IF NOT EXISTS `myshop_db` ;
+#    CREATE DATABASE IF NOT EXISTS `myshop_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci; ;
 #    GRANT ALL ON `myshop_db`.* TO 'appuser'@'%' ;
 #
 ###
