@@ -56,10 +56,11 @@ DOCKER_SYNC_STRATEGY=native_osx
 ### MARIADB ###############################################
 
 # lastest or specific version ex: MARIADB_VERSION=10.4.13 MARIADB_VERSION=latest
-MARIADB_VERSION=10.5.7
+MARIADB_VERSION=10.4.15
 MARIADB_DATABASE=default
 MARIADB_USER=default
 MARIADB_PASSWORD=S3cret
 MARIADB_PORT=3306
 MARIADB_ROOT_PASSWORD=rootS3cret
 MARIADB_ENTRYPOINT_INITDB=./mariadb/docker-entrypoint-initdb.d
+docker pull yobasystems/alpine-mariadb:10.4.15

@@ -1,7 +1,7 @@
 ARG MARIADB_VERSION=latest
-FROM mariadb:${MARIADB_VERSION}
+FROM yobasystems/alpine-mariadb:${MARIADB_VERSION}
 
-LABEL maintainer="Mahmoud Zalt <mahmoud@zalt.me>"
+LABEL maintainer="Shahid"
 
 #####################################
 # Set Timezone
